@@ -1,0 +1,35 @@
+<script src="tableau.js"></script>
+<style>
+body {
+    font-family: sans-serif;
+    color: #555;
+    width: 24em;
+}
+#tab-list {
+    width: 100%;
+}
+#tab-list .tab {
+    width: 100%;
+    clear; both;
+}
+#tab-list .tab .title {
+    float: left;
+}
+#tab-list .tab input {
+    float: right;
+}
+#tab-set-list-container > div {
+    cursor: pointer;
+}
+</style>
+<script>
+addEventListener("load", function(evt) {
+    tableau.update_tabs_display();
+    tableau.update_tab_sets_list_display();
+}, true);
+</script>
+<div id="status"></div>
+<h2>Tabs</h2>
+<div id="tab-list-container"></div>
+<h2>Tabsets</h2>
+<div id="tab-set-list-container"></div>

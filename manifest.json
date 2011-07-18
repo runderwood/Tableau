@@ -1,0 +1,12 @@
+{
+    "name": "Tableau",
+    "version": "0.1",
+    "homepage_url": "http://fm2279.com/",
+    "description": "Save groups of tabs for future use.",
+    "browser_action": {
+        "default_icon": "tableau.ico",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["tabs"],
+    "background_page": "background.html"
+}
